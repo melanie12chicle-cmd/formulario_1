@@ -223,82 +223,82 @@
     <div class="form-container" id="formGlam">
       <h3 style="margin:6px 0 12px 0; color:var(--pink-900)">Formulario — Atención & Recomendaciones</h3>
 
-      <form id="beautyForm" action="https://script.google.com/macros/s/AKfycbzAIlGsCEUtYCWephyO07ci0X_7VdBET-V9aQJsU51Qtq47feltrDwMW21kFt2IRvitaQ/exec" method="POST">
-        <label>Nombre completo</label>
-        <input type="text" placeholder="Ej. Ana García" required>
+      <form id="beautyForm"> 
+  <label>Nombre completo</label>
+  <input type="text" name="nombre" placeholder="Ej. Ana García" required>
 
-        <div class="two-col">
-          <div>
-            <label>Correo electrónico</label>
-            <input type="email" placeholder="ejemplo@correo.com" required>
-          </div>
-          <div>
-            <label>Teléfono (opcional)</label>
-            <input type="text" placeholder="55-1234-5678">
-          </div>
-        </div>
+  <div class="two-col">
+    <div>
+      <label>Correo electrónico</label>
+      <input type="email" name="email" placeholder="ejemplo@correo.com" required>
+    </div>
+    <div>
+      <label>Teléfono (opcional)</label>
+      <input type="text" name="telefono" placeholder="55-1234-5678">
+    </div>
+  </div>
 
-        <h4 style="margin-top:14px; color:var(--pink-900); font-weight:800">Preferencias & Piel</h4>
+  <h4 style="margin-top:14px; color:var(--pink-900); font-weight:800">Preferencias & Piel</h4>
 
-        <label>Tipo de piel</label>
-        <select required>
-          <option value="">Selecciona</option>
-          <option>Normal</option>
-          <option>Seca</option>
-          <option>Mixta</option>
-          <option>Grasa</option>
-          <option>Sensible</option>
-        </select>
+  <label>Tipo de piel</label>
+  <select name="piel" required>
+    <option value="">Selecciona</option>
+    <option>Normal</option>
+    <option>Seca</option>
+    <option>Mixta</option>
+    <option>Grasa</option>
+    <option>Sensible</option>
+  </select>
 
-        <label>Acabado preferido</label>
-        <div>
-          <label class="pill"><input type="radio" name="acabado" value="Matte"> Matte</label>
-          <label class="pill"><input type="radio" name="acabado" value="Glossy"> Glossy</label>
-          <label class="pill"><input type="radio" name="acabado" value="Satin"> Satin</label>
-          <label class="pill"><input type="radio" name="acabado" value="Shimmer"> Shimmer</label>
-        </div>
+  <label>Acabado preferido</label>
+  <div>
+    <label class="pill"><input type="radio" name="acabado" value="Matte"> Matte</label>
+    <label class="pill"><input type="radio" name="acabado" value="Glossy"> Glossy</label>
+    <label class="pill"><input type="radio" name="acabado" value="Satin"> Satin</label>
+    <label class="pill"><input type="radio" name="acabado" value="Shimmer"> Shimmer</label>
+  </div>
 
-        <label>Tonos favoritos</label>
-        <input type="text" placeholder="Ej. nude, vino, coral, rosado">
+  <label>Tonos favoritos</label>
+  <input type="text" name="tonos" placeholder="Ej. nude, vino, coral, rosado">
 
-        <label>Nivel de experiencia</label>
-        <select required>
-          <option value="">Selecciona</option>
-          <option>Principiante</option>
-          <option>Intermedio</option>
-          <option>Avanzado</option>
-        </select>
+  <label>Nivel de experiencia</label>
+  <select name="experiencia" required>
+    <option value="">Selecciona</option>
+    <option>Principiante</option>
+    <option>Intermedio</option>
+    <option>Avanzado</option>
+  </select>
 
-        <h4 style="margin-top:14px; color:var(--pink-900); font-weight:800">Pedido o consulta</h4>
+  <h4 style="margin-top:14px; color:var(--pink-900); font-weight:800">Pedido o consulta</h4>
 
-        <label>Producto que te interesa</label>
-        <input type="text" placeholder="Ej. Paleta Sunset Glow">
+  <label>Producto que te interesa</label>
+  <input type="text" name="producto" placeholder="Ej. Paleta Sunset Glow">
 
-        <label>Cantidad aproximada</label>
-        <input type="number" min="1" placeholder="1">
+  <label>Cantidad aproximada</label>
+  <input type="number" name="cantidad" min="1" placeholder="1">
 
-        <label>Notas o dudas</label>
-        <textarea placeholder="Preferencias, alergias, tonos específicos..."></textarea>
+  <label>Notas o dudas</label>
+  <textarea name="notas" placeholder="Preferencias, alergias, tonos específicos..."></textarea>
 
-        <label>¿Cómo nos conociste?</label>
-        <select>
-          <option>Instagram</option>
-          <option>TikTok</option>
-          <option>Recomendación</option>
-          <option>Evento</option>
-          <option>Buscador</option>
-          <option>Otro</option>
-        </select>
+  <label>¿Cómo nos conociste?</label>
+  <select name="origen">
+    <option>Instagram</option>
+    <option>TikTok</option>
+    <option>Recomendación</option>
+    <option>Evento</option>
+    <option>Buscador</option>
+    <option>Otro</option>
+  </select>
 
-        <div style="margin-top:10px; font-size:13px;">
-          <input type="checkbox" required> Acepto el aviso de privacidad y el uso de mis datos para contacto.
-        </div>
+  <div style="margin-top:10px; font-size:13px;">
+    <input type="checkbox" required> Acepto el aviso de privacidad y el uso de mis datos para contacto.
+  </div>
 
-        <div class="submit-row">
-          <button type="submit">Enviar solicitud ✨</button>
-          <button type="button" class="secondary" id="limpiar">Limpiar</button>
-        </div>
-      </form>
+  <div class="submit-row">
+    <button type="submit" id="btnSubmit">Enviar solicitud ✨</button>
+    <button type="button" class="secondary" id="limpiar">Limpiar</button>
+  </div>
+</form>
     </div>
   </section>
 
@@ -324,15 +324,16 @@
 </footer>
 
 <script>
+  // --- Canvas Logic (Se mantiene igual) ---
   const canvas = document.getElementById('miCanvas');
   const ctx = canvas.getContext('2d');
-
   const url1 = 'https://beautycreationscosmetics.com.mx/cdn/shop/files/bcc-backup-beauty-creations-tease-me-paleta-de-sombras-cosmetics-e18t-911682.webp?v=1723581920';
   const url2 = 'https://beautycreationscosmetics.com.mx/cdn/shop/files/bcc-backup-beauty-creations-ph-lip-oil-aceite-labial-ph-cosmetics-loph-1-822697.webp?v=1723568181';
   const url3 = 'https://romanamx.com/cdn/shop/products/Beutycreations-MAQUILLAJELIQUIDO_1.jpg?v=1658341428';
 
   function drawImage(url){
     const img = new Image();
+    img.crossOrigin = "Anonymous"; // Ayuda a cargar imágenes externas en canvas
     img.src = url;
     img.onload = ()=>{
       ctx.clearRect(0,0,canvas.width,canvas.height);
@@ -350,20 +351,44 @@
 
   document.getElementById('btnClear').onclick = ()=>{
     ctx.clearRect(0,0,canvas.width,canvas.height);
-    ctx.fillStyle="#fff";
-    ctx.fillRect(0,0,canvas.width,canvas.height);
-  };
-
-  document.getElementById('beautyForm').onsubmit = e=>{
-    e.preventDefault();
-    alert("Formulario enviado 💖 Gracias por tu mensaje.");
   };
 
   document.getElementById('limpiar').onclick = ()=>{
     document.getElementById('beautyForm').reset();
   }
+
+  // --- LOGICA DE ENVÍO DE FORMULARIO CORREGIDA ---
+  
+  // Tu URL del Script de Google
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzAIlGsCEUtYCWephyO07ci0X_7VdBET-V9aQJsU51Qtq47feltrDwMW21kFt2IRvitaQ/exec';
+  const form = document.getElementById('beautyForm');
+  const btnSubmit = document.getElementById('btnSubmit');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault(); // Evita que la página se recargue
+    
+    // Cambiar texto botón para feedback visual
+    const originalText = btnSubmit.innerText;
+    btnSubmit.innerText = "Enviando...";
+    btnSubmit.disabled = true;
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+         alert("¡Formulario enviado con éxito! 💖 Gracias por tu mensaje.");
+         form.reset(); // Limpia el formulario
+         btnSubmit.innerText = originalText;
+         btnSubmit.disabled = false;
+      })
+      .catch(error => {
+         alert("Hubo un error al enviar. Por favor intenta de nuevo.");
+         console.error('Error!', error.message);
+         btnSubmit.innerText = originalText;
+         btnSubmit.disabled = false;
+      });
+  });
 </script>
 
 </body>
 </html>
+
 
