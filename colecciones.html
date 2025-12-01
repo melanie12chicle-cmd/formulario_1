@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Creations — Colecciones</title>
+  <style>
+    :root{
+      --pink-900:#b0206a;
+      --pink-700:#e160a8;
+      --pink-bg: linear-gradient(135deg,#fff0f8 0%, #fde6f2 35%, #fff 100%);
+      --muted:#5f5f5f;
+    }
+    body{
+      margin:0;
+      font-family:'Segoe UI',sans-serif;
+      background-image:url("https://i.pinimg.com/736x/b8/01/73/b801736f69318a1819b7358126d1c44c.jpg");
+      background-size:cover;
+      background-position:center;
+      background-attachment:fixed;
+      color:var(--muted);
+    }
+    header{
+      background:linear-gradient(90deg,var(--pink-900),#9e1f64);
+      color:white;
+      padding:24px;
+      text-align:center;
+      font-weight:900;
+      font-size:24px;
+      box-shadow:0 6px 18px rgba(176,32,106,0.18);
+    }
+    nav{
+      display:flex;
+      justify-content:center;
+      gap:18px;
+      padding:12px;
+      background:rgba(255,255,255,0.7);
+      backdrop-filter:blur(6px);
+    }
+    nav a{
+      text-decoration:none;
+      color:var(--muted);
+      font-weight:700;
+      padding:8px 12px;
+      border-radius:8px;
+    }
+    nav a:hover{
+      color:var(--pink-900);
+      transform:translateY(-2px);
+      transition:.2s;
+    }
+    .grid{
+      max-width:1100px;
+      margin:40px auto;
+      padding:20px;
+      display:grid;
+      gap:24px;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    }
+    .card{
+      background:rgba(255,255,255,0.88);
+      border-radius:14px;
+      padding:18px;
+      box-shadow:0 12px 36px rgba(0,0,0,.08);
+      text-align:center;
+      backdrop-filter:blur(5px);
+    }
+    .card img{
+      width:100%;
+      border-radius:12px;
+      height:230px;
+      object-fit:cover;
+    }
+    .card h3{
+      color:var(--pink-900);
+      margin-top:10px;
+      font-size:20px;
+      font-weight:800;
+    }
+    .card p{
+      font-size:14px;
+      color:#6b6b6b;
+    }
+    footer{
+      margin-top:40px;
+      text-align:center;
+      padding:20px;
+      background:rgba(255,255,255,0.6);
+      backdrop-filter:blur(5px);
+      font-size:14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>Beauty Creations — Colecciones</header>
+
+<nav>
+  <a href="inicio.html">Inicio</a>
+  <a href="colecciones.html">Colecciones</a>
+  <a href="contacto.html">Contacto</a>
+</nav>
+
+<section class="grid">
+
+  <div class="card">
+    <img src="https://beautycreationscosmetics.com.mx/cdn/shop/files/ADVENTFOCUSED.jpg?v=1761782982&width=1000" alt="">
+    <h3>Candy Land - Calendario De Adviento 12 Días</h3>
+    <p>Celebra las fiestas con 12 días de dulces sorpresas con este calendario de adviento inspirado en el icónico juego de mesa Candy Land de Hasbro. Cada día revela un delicioso regalo repleto de colores alegres, aromas dulces y un encanto nostálgico: ¡perfecto para añadir un toque de diversión a tu colección de belleza!</p>
+  </div>
+
+  <div class="card">
+    <img src="https://beautycreationscosmetics.com.mx/cdn/shop/files/luis-torres-pr-sin-labiales.webp?v=1753742475" alt="">
+    <h3>Luis Torres X Beauty Creations - Colección Vol. 2</h3>
+    <p>Beauty Creations X Luis Torres Vol.2 ¡al fin está aquí! la espera termino y no te puedes quedar sin la experiencia de influencer con su caja PR ✨ en esta colección encontraras todo lo necesario para crear un sin fin de makeup looks, glam, natural, fiesta, diario ¡tu nómbralo y podrás lograrlo! además de que con su presentación de PR Box edición limitada podrás tener la experiencia Luis Torres completa, contiene una paleta de sombras, una paleta para rostro, sombras en crema y crayones, todo un sueño 💕</p>
+  </div>
+
+  <div class="card">
+    <img src="https://beautycreationscosmetics.com.mx/cdn/shop/files/1-DSC00045-lip_oils.jpg?v=1759367129"">
+    <h3>Tim Burton's Corpse Bride X Beauty Creations</h3>
+    <p>Sumérgete en el romance del Cadáver de la Novia con Bridal Veil, un aceite que envuelve tus labios en un brillo luminoso. Enriquecido con aceites nutritivos y vitamina E, deja los labios suaves, tersos y reconfortados, mientras que su brillo lunar crea un resplandor excepcional.</p>
+  </div>
+
+</section>
+
+<footer>
+  © 2025 Beauty Creations México · Diseño por Melanie Polanco
+</footer>
+
+</body>
+</html>
